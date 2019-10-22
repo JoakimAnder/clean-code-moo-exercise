@@ -1,26 +1,29 @@
-package refactored.UI.window;
+package refactored.UI.swing;
 
 import refactored.UI.popup.Popup;
-import refactored.UI.popup.SwingPopup;
-import refactored.UI.textField.SwingTextField;
 import refactored.UI.textField.TextField;
+import refactored.UI.window.Window;
 
 public class SwingWindow implements Window {
 
     private SwingSetup swing;
-    private TextField input;
-    private TextField output;
-    private Popup popup;
+    private SwingTextField input;
+    private SwingTextField output;
+    private SwingPopup popup;
 
     public static Window createWindow() {
         return new SwingWindow();
     }
 
     private SwingWindow() {
-        swing = SwingSetup.createFxSetup();
+        swing = SwingSetup.createSwingSetup();
         input = new SwingTextField(swing.getInput());
         output = new SwingTextField(swing.getOutput());
         popup = new SwingPopup();
+
+        swing.getButton().addActionListener(e -> {
+            input.getOnSubmit().accept(input.getAndClear());
+        });
     }
 
     @Override

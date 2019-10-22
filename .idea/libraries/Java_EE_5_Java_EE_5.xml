@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Java EE 5-Java EE 5">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/javaee.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

@@ -8,6 +8,13 @@
         </ejbRoots>
       </configuration>
     </facet>
+    <facet type="javaeeApplication" name="javaEEApplication">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="application.xml" url="file://$MODULE_DIR$/META-INF/application.xml" />
+        </descriptors>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
@@ -16,6 +23,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="Java EE 5-Java EE 5" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.18" level="project" />
   </component>
 </module>

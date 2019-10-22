@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="clean-code-moo-exercise:ear exploded2">
+    <output-path>$PROJECT_DIR$/out/artifacts/clean_code_moo_exercise_ear_exploded2</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="clean-code-moo-exercise/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>

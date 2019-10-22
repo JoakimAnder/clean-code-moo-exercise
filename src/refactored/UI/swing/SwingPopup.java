@@ -1,5 +1,7 @@
-package refactored.UI.popup;
+package refactored.UI.swing;
 
+
+import refactored.UI.popup.Popup;
 
 import javax.swing.*;
 

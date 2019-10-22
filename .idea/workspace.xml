@@ -1,7 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bb49680-d3e4-4df5-8e48-87f9975e1633" name="Default Changelist" comment="" />
+    <list default="true" id="3bb49680-d3e4-4df5-8e48-87f9975e1633" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/clean_code_moo_exercise_ear_exploded2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/META-INF/application.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/DB/GameDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/DB/GameNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/DB/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/DB/UserNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/DB/jdbc/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/DB/jdbc/JDBCConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/DB/jdbc/JDBCGameDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/DB/jdbc/JDBCUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/DB/jdbc/PreparedStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/DB/jdbc/ResultSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/DB/models/INeedThisForSomeReason/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/DB/models/INeedThisForSomeReason/Score.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/DB/models/INeedThisForSomeReason/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/UI/swing/SwingTextField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/business/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/business/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/business/moo/donotaskmewhy/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/business/moo/donotaskmewhy/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/business/select/GameMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/business/select/LoginMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/business/utilities/QueueAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/refactored/business/utilities/SimpleQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_5_Java_EE_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean-code-moo-exercise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/clean-code-moo-exercise.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercise/Moo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercise/Moo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/refactored/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/refactored/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/refactored/UI/popup/SwingPopup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/refactored/UI/swing/SwingPopup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/refactored/UI/textField/SwingTextField.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/refactored/UI/textField/TextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/refactored/UI/textField/TextField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/refactored/UI/window/SwingSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/refactored/UI/swing/SwingSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/refactored/UI/window/SwingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/refactored/UI/swing/SwingWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/refactored/game/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/refactored/game/MooGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/refactored/menu/GameMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/refactored/menu/Menu.java" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,24 +59,30 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/clean-code-moo-game" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SL2q7t57TXqcZzrLuxFNdBbyMf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../clean-code-refactoring-exercise" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.31617647" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="refactored.DB" />
+      <recent name="refactored.DB.jdbc" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="refactored.menu" />
+      <recent name="refactored.integration.datamodels" />
+      <recent name="refactored.integration.models" />
       <recent name="refactored.game" />
-      <recent name="refactored.UI.window" />
-      <recent name="refactored.UI.textField" />
+      <recent name="refactored.models" />
+      <recent name="refactored.menu" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -49,13 +97,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.JDBCGameDao">
+    <configuration name="JDBCGameDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="refactored.DB.jdbc.JDBCGameDao" />
+      <module name="clean-code-moo-exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="refactored.DB.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="refactored.Main" />
       <module name="clean-code-moo-exercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="refactored.*" />
+          <option name="PATTERN" value="refactored.DB.jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,6 +126,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JDBCGameDao" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -80,7 +142,10 @@
       <option name="presentableId" value="Default" />
       <updated>1571328742181</updated>
       <workItem from="1571328758097" duration="7135000" />
-      <workItem from="1571339491138" duration="4055000" />
+      <workItem from="1571339491138" duration="4194000" />
+      <workItem from="1571407079541" duration="9894000" />
+      <workItem from="1571489854968" duration="1332000" />
+      <workItem from="1571739067355" duration="40204000" />
     </task>
     <servers />
   </component>
@@ -92,7 +157,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

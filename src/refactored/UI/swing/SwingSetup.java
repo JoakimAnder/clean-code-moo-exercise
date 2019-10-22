@@ -1,4 +1,4 @@
-package refactored.UI.window;
+package refactored.UI.swing;
 
 import javax.swing.*;
 import java.awt.*;
@@ -10,7 +10,7 @@ public class SwingSetup {
     private JTextField input;
     private JButton submitButton;
 
-    static SwingSetup createFxSetup() {
+    static SwingSetup createSwingSetup() {
         SwingSetup window = new SwingSetup();
         window.setup();
         return window;

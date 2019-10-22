@@ -25,8 +25,8 @@ public class Moo {
 		String name = gw.getString();
 		int id = 0;
 		Class.forName("com.mysql.jdbc.Driver");
-		connection = DriverManager.getConnection("jdbc:mysql://localhost/MooDB","ulf","ulfpw");			
-		stmt = connection.createStatement();		
+		connection = DriverManager.getConnection("jdbc:mysql://localhost/MooDB","root","root");
+		stmt = connection.createStatement();
 		rs = stmt.executeQuery("select id,name from players where name = '" + name + "'");
 		if (rs.next()) {
 			id = rs.getInt("id");

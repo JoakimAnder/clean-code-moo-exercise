@@ -1,11 +1,12 @@
 package refactored;
 
-import refactored.UI.window.SwingWindow;
+import refactored.DB.models.INeedThisForSomeReason.User;
+import refactored.UI.swing.SwingWindow;
 import refactored.UI.window.Window;
-import refactored.game.Game;
-import refactored.game.MooGame;
-import refactored.menu.GameMenu;
-import refactored.menu.Menu;
+import refactored.business.Game;
+import refactored.business.select.GameMenu;
+import refactored.business.select.LoginMenu;
+import refactored.business.Menu;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,39 +15,41 @@ public class Main {
     }
 
     private Window window = SwingWindow.createWindow();
-    private Menu menu = new GameMenu(window);
-    Game game = MooGame.createGame();
-//    Dao dao;
+    private GameMenu gameMenu = new GameMenu();
+    private LoginMenu loginMenu = new LoginMenu();
+    Game game;
+    User user;
 
-    int userID;
+//    Dao dao = new JDBCDao();
 
     void start() {
+        window.show(true);
         login();
-        runApp();
         window.quit();
     }
 
     void login() {
-        String userName = window.popup().input("Enter your user name:");
-//        userID = dao.getUserIdByName(username);
+        user = loginMenu.select(window);
+        if (user == Menu.NO_SELECTED)
+            return;
+        selectGame();
     }
 
-    void runApp() {
-        while(true) {
-            game = menu.selectGame();
-            if(game == Menu.NO_SELECTED)
-                break;
-            runGame();
-        }
+    void selectGame() {
+        game = gameMenu.select(window);
+        if (game == Menu.NO_SELECTED)
+            login();
+        runGame();
     }
 
     void runGame() {
         boolean play = true;
         while (play) {
-            game.setup();
+            game.setup(window, user);
             String message = game.play();
             play = window.popup().confirm(message+"\nContinue?");
         }
+        selectGame();
     }
 
 
