@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Comparator;
 
 import javax.swing.JOptionPane;
 
@@ -54,8 +55,10 @@ public class Moo {
 				bbcc = checkBC(goal, guess);
 				gw.addString(bbcc + "\n");
 			}
-			int ok = stmt.executeUpdate("INSERT INTO results " + 
-					"(result, player) VALUES (" + nGuess + ", " +	id + ")" );
+			int ok = stmt.executeUpdate(String.format(
+					"insert into scores (game, player, points, timestamp) values (%d,%d,%d,%d)",
+					1,1,5,5
+					));
 			showTopTen();
 			answer = JOptionPane.showConfirmDialog(null, "Correct, it took " + nGuess
 					+ " guesses\nContinue?");
@@ -120,12 +123,12 @@ public class Moo {
 		while(rs.next()) {
 			int id = rs.getInt("id");
 			String name = rs.getString("name");
-			rs2 = stmt2.executeQuery("select * from results where player = "+ id );
+			rs2 = stmt2.executeQuery("select * from scores where player = "+ id );
 			int nGames = 0;
 			int totalGuesses = 0;
 			while (rs2.next()) {
 				nGames++;
-				totalGuesses += rs2.getInt("result");
+				totalGuesses += rs2.getInt("points");
 			}
 			if (nGames > 0) {
 				topList.add(new PlayerAverage(name, (double)totalGuesses/nGames));
@@ -134,7 +137,7 @@ public class Moo {
 		}
 		gw.addString("Top Ten List\n    Player     Average\n");
 		int pos = 1;
-		topList.sort((p1,p2)->(Double.compare(p1.average, p2.average)));
+		topList.sort(Comparator.comparingDouble(p -> p.average));
 		for (PlayerAverage p : topList) {
 			gw.addString(String.format("%3d %-10s%5.2f%n", pos, p.name, p.average));
 			if (pos++ == 10) break;
